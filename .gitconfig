@@ -1,0 +1,7 @@
+[user]
+	email = brady93hawkins@gmail.com
+	name = hawk0120
+[credential]
+	helper = cache
+[init]
+	templatedir = /home/hawk0120/.git-templates
