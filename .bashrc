@@ -111,7 +111,8 @@ export PATH=$PATH:$JAVA_HOME/bin
 # Import aliases.sh	
 source /home/hawk0120/.aliases.sh
 
-
+#Load Angular CLI autocompletion.
+source <(ng completion script)
 
 
 
