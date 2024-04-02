@@ -22,8 +22,8 @@ Plug 'christoomey/vim-tmux-navigator'
 Plug 'junegunn/vim-easy-align'    
     
 " Install NERDTREE    
-Plug 'preservim/nerdtree', { 'on': 'NERDTreeToggle' }    
-    
+Plug 'preservim/nerdtree', { 'on': 'NERDTreeToggle' }
+
 " Install the gruvbox theme    
 Plug  'morhetz/gruvbox'    
 colorscheme gruvbox    
@@ -41,3 +41,9 @@ nnoremap gR gD:%s/<C-R>///gc<left><left><left>
     
     
 call plug#end()    
+
+
+" TODO: Change to Telescope   
+" - Added vim-Test 
+    
+
