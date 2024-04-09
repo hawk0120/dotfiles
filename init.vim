@@ -1,4 +1,4 @@
-all plug#begin()
+call plug#begin()
 
 " coc for autocompletion
 Plug 'neoclide/coc.nvim', {'branch': 'master', 'do': 'npm ci'}
