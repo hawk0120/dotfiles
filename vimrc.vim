@@ -22,8 +22,8 @@ Plug 'prettier/vim-prettier', { 'do': 'npm install --frozen-lockfile --productio
 
 " Install vim-tmux-navigator
 Plug 'christoomey/vim-tmux-navigator'
-
-" Install vim-easy-align
+    
+"Install vim-easy-align
 Plug 'junegunn/vim-easy-align'
 
 " Install Telescope
@@ -35,36 +35,41 @@ Plug  'morhetz/gruvbox'
 colorscheme gruvbox
 
 " Install I use Neovim(BTW)
-Plug 'letieu/btw.nimv'
+Plug 'letieu/btw.nvim'
+
+Plug 'itchyny/lightline.vim'
+let g:lightline = {
+                                \ 'colorscheme' : 'gruvbox',
+                                \ }
+
 
 " netrw customizations
 let g:netrw_banner=0
 let g:netrw_localcopydircmd = 'cp -r'
 
 syntax on               " Enable syntax highlighting
-set termguicolors       " Enable true colors
-set t_Co=256            " Required for the Ubuntu terminal
-set number              " Show line numbers
+set noshowmode
+set termguicolors       
+set t_Co=256
 set tabstop=2           " Number of spaces that a <Tab> in the file counts for
+set relativenumber
+set number
 
-
-    
 " for global replace: to use gR    
 nnoremap gR gD:%s/<C-R>///gc<left><left><left>    
-
 
 " for global replace: to use gR
 nnoremap gR gD:%s/<C-R>///gc<left><left><left>
 
 " Telescope remapped keys. 
 nnoremap ff <cmd>Telescope find_files<cr>
-nnoremap <leader>fg <cmd>Telescope live_grep<cr>
-nnoremap <leader>fb <cmd>Telescope buffers<cr>
-nnoremap <leader>fh <cmd>Telescope help_tags<cr>
+nnoremap fg <cmd>Telescope live_grep<cr>
+nnoremap fb <cmd>Telescope buffers<cr>
+nnoremap fh <cmd>Telescope help_tags<cr>
 
-" Netrw remapped Keys
-nnoremap <Leader>dd <cmd>:Lexplore %:p:h<CR>
-nnoremap <Leader>da             <cmd>:Lexplore<CR>
+nnoremap <leader>w <cmd>write<cr>
+nnoremap <leader>q <cmd>quit<cr>
+
 
 
 call plug#end()
