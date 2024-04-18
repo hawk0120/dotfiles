@@ -36,11 +36,9 @@ if [ ~/$HOME/.nvim ]; then
 else
     # Install neovim
     sudo apt install neovim
-    # Install vim-plug
-    curl -fLo ~/.local/share/nvim/site/autoload/plug.vim --create-dirs \
-	https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
-    # Install neovim plugins
-    nvim +PlugInstall +qall
+    git clone --depth 1 https://github.com/wbthomason/packer.nvim\
+ ~/.local/share/nvim/site/pack/packer/start/packer.nvim	
+    nvim +PackerSync 
     echo "Neovim installed"
 fi
 
@@ -108,17 +106,7 @@ else
     echo "Zoom installed"
 fi
 
-# Install Google Chrome
-if [ -x "$(command -v google-chrome)" ]; then
-    echo "Google Chrome is already installed"
-else
-    wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
-    sudo dpkg -i google-chrome-stable_current_amd64.deb
-    sudo apt install -f
-    rm google-chrome-stable_current_amd64.deb
-    echo "Google Chrome installed"
 
-fi
 
 # Install Spotify
 if [ -x "$(command -v spotify)" ]; then
