@@ -73,27 +73,6 @@ if [ -x /usr/bin/dircolors ]; then
     alias egrep='egrep --color=auto'
 fi
 
-
-# Alias definitions.
-# You may want to put all your additions into a separate file like
-# ~/.bash_aliases, instead of adding them here directly.
-# See /usr/share/doc/bash-doc/examples in the bash-doc package.
-
-if [ -f ~/.bash_aliases ]; then
-    . ~/.bash_aliases
-fi
-
-export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
-[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
-
-
-#Set up Android SDK
-export ANDROID_HOME=${HOME}/Android/Sdk
-export PATH=${ANDROID_HOME}/tools:${PATH}
-export PATH=${ANDROID_HOME}/emulator:${PATH}
-export PATH=${ANDROID_HOME}/platform-tools:${PATH}
-
 #Set up Java
 export JAVA_HOME=/usr/lib/jvm/java-1.17.0-openjdk-amd64
 export PATH=$PATH:$JAVA_HOME/bin
@@ -102,20 +81,6 @@ export PATH=$PATH:$JAVA_HOME/bin
 source /home/hawk0120/.aliases.sh
 
 
-
-
-
-nvm use node
-
-# Load Angular CLI autocompletion.
-source <(ng completion script)
-
-#THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
-export SDKMAN_DIR="$HOME/.sdkman"
-[[ -s "$HOME/.sdkman/bin/sdkman-init.sh" ]] && source "$HOME/.sdkman/bin/sdkman-init.sh"
-
-# The next line updates PATH for the Google Cloud SDK.
-if [ -f '/home/hawk0120/google-cloud-sdk/path.bash.inc' ]; then . '/home/hawk0120/google-cloud-sdk/path.bash.inc'; fi
 
 
 
