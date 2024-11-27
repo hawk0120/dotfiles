@@ -9,8 +9,8 @@ return require('packer').startup(function(use)
 		-- or                            , branch = '0.1.x',
 		requires = { {'nvim-lua/plenary.nvim'} }
 	}
-	
-	use "EdenEast/nightfox.nvim" 
+
+	use {"EdenEast/nightfox.nvim"}
 	use {'letieu/btw.nvim'}
 
 	use {
@@ -20,11 +20,17 @@ return require('packer').startup(function(use)
 	}
   use {"neovim/nvim-lspconfig"}
 	use {"williamboman/nvim-lsp-installer"}
+	use('jose-elias-alvarez/null-ls.nvim')
+	use('MunifTanjim/prettier.nvim')
+
+	use ('wakatime/vim-wakatime')
 
 	use { 'mbbill/undotree'}	
 	use {'neoclide/coc.nvim', tag = 'master', run = 'npm ci'}
-	use {'itchyny/lightline.vim'}
-				use {'folke/zen-mode.nvim'}
-				use {'iamcco/markdown-preview.nvim', run = 'cd app && npx --yes yarn install' }
+ use {'mfussenegger/nvim-lint'}  
 
+	use {'itchyny/lightline.vim'}
+	use {'folke/zen-mode.nvim'}
+	use {'iamcco/markdown-preview.nvim', run = 'cd app && npx --yes yarn install' }
+  use { "folke/flash.nvim"}
 end)

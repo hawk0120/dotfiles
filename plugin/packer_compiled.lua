@@ -99,6 +99,11 @@ _G.packer_plugins = {
     path = "/home/hawk0120/.local/share/nvim/site/pack/packer/start/nightfox.nvim",
     url = "https://github.com/EdenEast/nightfox.nvim"
   },
+  ["null-ls.nvim"] = {
+    loaded = true,
+    path = "/home/hawk0120/.local/share/nvim/site/pack/packer/start/null-ls.nvim",
+    url = "https://github.com/jose-elias-alvarez/null-ls.nvim"
+  },
   ["nvim-lsp-installer"] = {
     loaded = true,
     path = "/home/hawk0120/.local/share/nvim/site/pack/packer/start/nvim-lsp-installer",
@@ -123,6 +128,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/hawk0120/.local/share/nvim/site/pack/packer/start/plenary.nvim",
     url = "https://github.com/nvim-lua/plenary.nvim"
+  },
+  ["prettier.nvim"] = {
+    loaded = true,
+    path = "/home/hawk0120/.local/share/nvim/site/pack/packer/start/prettier.nvim",
+    url = "https://github.com/MunifTanjim/prettier.nvim"
   },
   ["telescope.nvim"] = {
     loaded = true,
