@@ -27,20 +27,6 @@ alias ....='cd ../../..'
 alias .....='cd ../../../..'
 alias Jrnl='nv ~/Documents/Writing/Journal/'
 
-###### Tools ######
-
-#ExpressVPN Alias
-alias exnl='expressvpn connect netherlands'                                                          
-alias exus='expressvpn connect united_states'                                                        
-alias exca='expressvpn connect canada'
-alias exd='expressvpn disconnect'
-
-
-#Timer Thally 
-alias pmd='node /home/hawk0120/Tools/Thally/thally.js'              
-
-#Eleusis Password Manager
-alias e='java /home/hawk0120/Tools/Eleusis/Eleusis.java'
 
 #Vim Alias
 alias visc='xdg-open ~/Pictures/vim.jpg/'                                                            
