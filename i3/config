@@ -1,12 +1,15 @@
 # i3 config file - hawk0120 
-#
-# Please see https://i3wm.org/docs/userguide.html for a complete reference!
 
 set $mod Mod4
+set $em DVI-I-1-1
+set $laptop eDP-1
+
+# Set default layout
+exec_always --no-startup-id setxkbmap -layout us -variant altgr-intl
 
 # Font for window titles. Will also be used by the bar unless a different font
 # is used in the bar {} block below.
-font pango:JetBrainsMono Nerd Font 10
+font pango:Terminus 10px
 
 # This font is widely installed, provides lots of unicode glyphs, right-to-left
 # text rendering and scalability on retina/hidpi displays (thanks to pango).
@@ -95,6 +98,9 @@ bindsym $mod+Shift+space floating toggle
 # change focus between tiling / floating windows
 bindsym $mod+space focus mode_toggle
 
+# handle multiple monitors
+bindsym $mod+Shift+m move workspace to output right
+
 # focus the parent container
 bindsym $mod+a focus parent
 
@@ -124,6 +130,22 @@ bindsym $mod+8 workspace number $ws8
 bindsym $mod+9 workspace number $ws9
 bindsym $mod+0 workspace number $ws10
 
+# Check for multiple displays
+exec xrandr
+
+# Assign workspaces to displays
+workspace 1 output $laptop	
+workspace 2 output $laptop 
+workspace 3 output $laptop
+workspace 4 output $laptop
+workspace 5 output $laptop
+
+workspace 6 output $em
+workspace 7 output $em
+workspace 8 output $em
+workspace 9 output $em
+workspace 10 output $em
+
 # move focused container to workspace
 bindsym $mod+Shift+1 move container to workspace number $ws1
 bindsym $mod+Shift+2 move container to workspace number $ws2
@@ -135,6 +157,16 @@ bindsym $mod+Shift+7 move container to workspace number $ws7
 bindsym $mod+Shift+8 move container to workspace number $ws8
 bindsym $mod+Shift+9 move container to workspace number $ws9
 bindsym $mod+Shift+0 move container to workspace number $ws10
+
+# Enable $em display 
+exec --no-startup-id xrandr --output DVI-I-1-1 --auto --right-of eDP-1
+
+
+# multiple monitors
+# bindsym $mod+Shift+1 move workspace to output HDMI-1
+
+
+
 
 # reload the configuration file
 bindsym $mod+Shift+c reload
@@ -177,7 +209,7 @@ default_border pixel 0
 default_floating_border pixel 0 
 
 # Change background image
-exec_always --no-startup-id feh --bg-fill  ~/Pictures/Wallpapers/Algoquin.jpg
+exec_always --no-startup-id feh --bg-fill  ~/Pictures/group7.jpg
 
 # Polybar
 exec_always --no-startup-id $HOME/.config/polybar/launch.sh
@@ -194,4 +226,3 @@ bindsym $mod+Shift+p exec --no-startup-id systemctl poweroff
 
 # Toggle Polybar visibility
 bindsym $mod+Shift+h exec ~/.config/polybar/toggle_polybar.sh
-
