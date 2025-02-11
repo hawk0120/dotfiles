@@ -27,15 +27,17 @@ alias ....='cd ../../..'
 alias .....='cd ../../../..'
 alias Jrnl='nv ~/Documents/Writing/Journal/'
 
-
-#Vim Alias
-alias visc='xdg-open ~/Pictures/vim.jpg/'                                                            
+###### Tools ######                                                  
 
 #Shortcuts for inteliJ
 alias ijr='xdg-open ~/Pictures/IntelliJ.pdf'
 
 #Restart Alias
 alias restart='sudo reboot'
+
+#Wifi connection
+alias wl='nmcli device wifi list'
+alias wc='nmcli device wifi connect'
 
 
 #Git Alias
@@ -60,4 +62,3 @@ alias gf='git fetch'
 alias lmp='sudo brightnessctl s'
 alias lmpM='sudo brightnessctl s 1060'
 alias lmpm='sudo brightnessctl s  50'
-
