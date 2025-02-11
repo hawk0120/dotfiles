@@ -1,5 +1,4 @@
 -- Automatically generated packer.nvim plugin loader code
-
 if vim.api.nvim_call_function('has', {'nvim-0.5'}) ~= 1 then
   vim.api.nvim_command('echohl WarningMsg | echom "Invalid Neovim version for packer.nvim! | echohl None"')
   return
@@ -84,6 +83,11 @@ _G.packer_plugins = {
     path = "/home/hawk0120/.local/share/nvim/site/pack/packer/start/coc.nvim",
     url = "https://github.com/neoclide/coc.nvim"
   },
+  ["codeium.nvim"] = {
+    loaded = true,
+    path = "/home/hawk0120/.local/share/nvim/site/pack/packer/start/codeium.nvim",
+    url = "https://github.com/Exafunction/codeium.nvim"
+  },
   ["lightline.vim"] = {
     loaded = true,
     path = "/home/hawk0120/.local/share/nvim/site/pack/packer/start/lightline.vim",
@@ -103,6 +107,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/hawk0120/.local/share/nvim/site/pack/packer/start/null-ls.nvim",
     url = "https://github.com/jose-elias-alvarez/null-ls.nvim"
+  },
+  ["nvim-lint"] = {
+    loaded = true,
+    path = "/home/hawk0120/.local/share/nvim/site/pack/packer/start/nvim-lint",
+    url = "https://github.com/mfussenegger/nvim-lint"
   },
   ["nvim-lsp-installer"] = {
     loaded = true,
@@ -143,6 +152,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/hawk0120/.local/share/nvim/site/pack/packer/start/undotree",
     url = "https://github.com/mbbill/undotree"
+  },
+  ["vim-wakatime"] = {
+    loaded = true,
+    path = "/home/hawk0120/.local/share/nvim/site/pack/packer/start/vim-wakatime",
+    url = "https://github.com/wakatime/vim-wakatime"
   },
   ["zen-mode.nvim"] = {
     loaded = true,
