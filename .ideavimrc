@@ -57,3 +57,4 @@ nnoremap <Leader>h <C-w>h
 nnoremap <Leader>l <C-w>l
 
 imap <Caps> <Esc>
+
